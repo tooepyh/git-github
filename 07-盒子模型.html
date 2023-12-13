@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* css重置化：保证浏览器渲染的一致性 */
+      * {
+        padding: 0;
+        margin: 0;
+        /* 防止盒子被撑大 */
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: #ccc;
+
+        /* 上内边距为10px */
+        padding-top: 10px;
+        padding-left: 60px;
+        /* 四边边框为4px */
+        border: 4px solid green;
+        /* 上外边距为10px */
+        margin-top: 10px;
+        margin-left: 30px;
+      }
+
+      /* 
+        盒子总宽度 = content width + 2*padding + 2*border 
+        268 = 200 + 60 + 2 * 4
+
+
+        盒子总高度 = content height + 2*padding + 2*border
+        218 = 200 + 10 + 2 * 4
+
+        注意：
+         1. 给盒子设置边框和内边距默认会撑大盒子。
+         2. 网页中所看到的的盒子大小是总宽和总高
+
+
+         如何防止盒子被撑大：给盒子设置box-sizing:border-box
+        */
+    </style>
+  </head>
+  <body>
+    <div class="box">小云</div>
+  </body>
+</html>

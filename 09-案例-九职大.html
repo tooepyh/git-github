@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      /* 公共的类名定义版心 */
+      .page {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .footer {
+        margin-top: 100px;
+        padding: 20px 0;
+        height: 250px;
+        background-color: #ccc;
+        background: #333 url(./images/foot-bg.png);
+      }
+
+      .footer .container {
+        /* padding: 0 15px; */
+      }
+
+      .footer .container {
+        width: 620px;
+        height: 180px;
+        padding: 15px 0px 15px 35px;
+        /* background-color: red; */
+        font-size: 14px;
+        color: #fff;
+        border-left: 1px solid #a7a3a3;
+      }
+
+      .footer .container .item {
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+      }
+
+      .footer .container .record {
+        text-align: center;
+      }
+
+      .footer .wrap {
+        position: relative;
+      }
+
+      .footer .wrap .qrcode {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 155px;
+        height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer">
+      <div class="page wrap">
+        <div class="container">
+          <div class="item">版权所有©九江职业大学</div>
+            <div class="item">
+              邮编：332000 联系电话：0792-8379969 传真：0792-8379969
+            </div>
+            <div class="item">
+              地址：江西省九江市濂溪大道88号（濂溪校区）
+              江西省九江市九瑞大道91号（鹤问湖校区）
+            </div>
+            <div class="record">
+              <img src="./images/gongan.png" alt="" />
+              <span>赣公网安备 36040202000204号</span>
+            </div>
+        </div>
+        <img class="qrcode" src="./images/qrcode.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

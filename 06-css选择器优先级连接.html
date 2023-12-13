@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 100 + 10 + 1 = 111 */
+      #box .list li {
+        color: red;
+      }
+
+      /* 1 + 10 + 10 = 21 */
+      div .list .item {
+        color: green;
+      }
+
+      /* 10 + 10 + 1 = 21 */
+      .wrap .list li {
+        color: blue;
+      }
+
+      p {
+        color: blue !important;
+      }
+
+      p {
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box" class="wrap">
+      <ul class="list" id="list">
+        <li class="item" style="color: pink">宇杰</li>
+        <li class="item">杨亮</li>
+        <li class="item">俊杰</li>
+      </ul>
+    </div>
+
+    <p>邓紫棋</p>
+  </body>
+</html>

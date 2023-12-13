@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        /* 背景色 */
+        background-color: red;
+      }
+
+      .box2 {
+        width: 200px;
+        height: 200px;
+        border: 2px solid green;
+        /* 
+            背景图路径
+            注意：若背景图宽高小于容器的宽高，则默认会xy平铺铺满整个容器
+         */
+        /* background-image: url(./images/ouwen.jpg); */
+        /* 设置背景图平铺方式 */
+        /* background-repeat: no-repeat; */
+
+        /* 背景简写，等价于上面两行 */
+        background: url(./images/ouwen.jpg) no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">一起打羽毛球</div>
+    <div class="box2"></div>
+  </body>
+</html>

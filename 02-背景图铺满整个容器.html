@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        width: 103px;
+        height: 88px;
+        border: 2px solid green;
+        background: url(./images/ouwen.jpg) no-repeat;
+      }
+
+      .box2 {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+        border: 2px solid red;
+
+        /* 简写 */
+        background: url(./images/ouwen.jpg) no-repeat;
+        /* cover:等比例缩放，直至铺满整个容器 */
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        背景图铺满整个容器方式：
+        1. 将容器的宽高设置和背景图一样（可以保留原图片原尺寸）
+        2. 通过background-size可以缩放背景图·
+    -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>
